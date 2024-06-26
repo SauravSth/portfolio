@@ -1,0 +1,115 @@
+/* NAV CSS */
+nav {
+	display: flex;
+	padding: 2em 10em;
+	justify-content: space-around;
+	align-items: center;
+	background-color: var(--color-tertiary);
+	color: white;
+	font-weight: bold;
+}
+.navLeft,
+.navRight {
+	width: 100%;
+	font-size: 1rem;
+}
+.navLeft {
+	font-family: var(--logo-font);
+	font-weight: bolder;
+}
+nav ul {
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	align-items: center;
+}
+nav a,
+.titleAndLink a {
+	color: white;
+}
+nav li:last-child {
+	border: 2px solid var(--color-secondary);
+	padding: 1em;
+}
+/* FOOTER CSS */
+footer {
+	background-color: var(--color-tertiary);
+	padding: 2em 0;
+	color: gray;
+	text-align: center;
+}
+
+/* MAIN CSS */
+main {
+	min-height: 80vh;
+	background-color: var(--color-primary);
+	color: white;
+}
+#wrapper {
+	width: 80%;
+	margin: auto;
+	padding: 2em 0;
+}
+#bannerWrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.bannerText {
+	font-size: 4rem;
+}
+#bannerRight img {
+	width: 100%;
+}
+#skillsWrapper {
+	margin: 2em 0;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto;
+	row-gap: 3em;
+}
+
+.card {
+	width: 300px;
+	height: 300px;
+	background-color: var(--color-highlight);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 2em;
+}
+.aside {
+	grid-column: 4;
+	grid-row: auto;
+}
+#cardWrapper {
+	gap: 2em;
+	grid-column: span 3;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto;
+}
+.icon {
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 3em;
+	height: 3em;
+	filter: invert(40%) sepia(74%) saturate(3838%) hue-rotate(334deg)
+		brightness(102%) contrast(101%);
+}
+.cardTitle {
+	font-weight: bold;
+	font-size: large;
+}
+#myLinksWrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	height: 100%;
+}
+.titleAndLink {
+	display: flex;
+	align-items: center;
+	margin-top: 3em;
+}

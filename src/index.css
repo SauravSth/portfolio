@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+ID:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+:root {
+	--primary-font: 'Madimi One';
+	--logo-font: 'Playwrite ID';
+	--secondary-font: 'Didact Gothic';
+	--color-secondary: #fd4956;
+	--color-primary: #23263a;
+	--color-tertiary: #212336;
+	--color-highlight: #2b2d41;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--secondary-font);
+	text-decoration: none;
+}
+*::-webkit-scrollbar {
+	display: none;
+}
+.heading {
+	color: var(--color-secondary);
+	text-decoration: underline;
+	text-underline-offset: 0.8em;
+	grid-column: span 4;
+	font-size: 3rem;
+}
+.subheading {
+	color: darkgray;
+}
+button {
+	padding: 1.5em;
+	background-color: var(--color-secondary);
+	margin: 1em 0;
+	border: none;
+	color: white;
+	font-weight: bold;
+}
+button:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+	transition: ease-in-out 200ms;
+}
