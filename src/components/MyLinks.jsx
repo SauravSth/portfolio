@@ -25,13 +25,15 @@ export default function MyLinks() {
 					Github
 				</Link>
 			</div>
-
-			<div className="titleAndLink">
-				<div
-					className="icon"
-					style={{ backgroundImage: `url("/images/email.svg")` }}
-				></div>
-				<p>sauravshrestha28@gmail.com</p>
+			<div className="email">
+				<h1 className="heading">Email me on </h1>
+				<div className="titleAndLink">
+					<div
+						className="icon"
+						style={{ backgroundImage: `url("/images/email.svg")` }}
+					></div>
+					<p>sauravshrestha28@gmail.com</p>
+				</div>
 			</div>
 		</div>
 	);
