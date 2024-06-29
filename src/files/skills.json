@@ -1,9 +1,12 @@
 {
 	"NodeJS": {
-		"description": "Can use NodeJS to create the backend of different type of apps. Using SESSIONS and Cookies for managing user sessions and authentication.",
+		"description": "Can use NodeJS to create the backend of different type of apps. Can use its different npm packages according to needs.",
 		"img": "node.svg"
 	},
-	"ReactJS": { "description": "", "img": "react.svg" },
+	"ReactJS": {
+		"description": "Can use react to create the frontend of websites. Comfortable with function based react and using hooks, state, etc.",
+		"img": "react.svg"
+	},
 	"Express": {
 		"description": "Creating the backend of the website using Express framework. Applying different packages for authentication, database connections, etc.",
 		"img": "express.svg"
@@ -12,12 +15,14 @@
 		"description": "Use MongoDB to store data for different applications. Create schemas using mongoose package.",
 		"img": "mongodb.svg"
 	},
-	"SQL": { "description": "", "img": "sql.svg" },
+	"SQL": {
+		"description": "Can use SQL for database functions. Can create database architecture and use that to implement tables.",
+		"img": "sql.svg"
+	},
 	"EJS": {
 		"description": "Using template engine to display JavaScript on screen based on project needs. Use different features of template engines for features.",
 		"img": "ejs.svg"
 	},
-	"PHP": { "description": "", "img": "php.svg" },
 	"Github": {
 		"description": "Use version control to maintain structure of code. Used git for group project collaborations and maintaining app version.",
 		"img": "github.svg"

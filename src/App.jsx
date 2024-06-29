@@ -9,8 +9,6 @@ import './App.css';
 // PAGES
 import Home from './pages/Home';
 import Project from './pages/Project';
-import Contact from './pages/Contact';
-import Skills from './pages/Skills';
 
 function App() {
 	return (
@@ -21,8 +19,6 @@ function App() {
 					<Routes>
 						<Route path="/" element={<Home />} />
 						<Route path="/projects" element={<Project />} />
-						<Route path="/skills" element={<Skills />} />
-						<Route path="/contact" element={<Contact />} />
 					</Routes>
 				</div>
 			</main>

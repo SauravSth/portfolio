@@ -19,18 +19,19 @@ export default function MyLinks() {
 			<div className="titleAndLink">
 				<div
 					className="icon"
-					style={{ backgroundImage: `url("/images/email.svg")` }}
-				></div>
-				<p>sauravshrestha28@gmail.com</p>
-			</div>
-			<div className="titleAndLink">
-				<div
-					className="icon"
 					style={{ backgroundImage: `url("/images/github.svg")` }}
 				></div>
 				<Link to={'https://github.com/SauravSth'} target="_blank">
 					Github
 				</Link>
+			</div>
+
+			<div className="titleAndLink">
+				<div
+					className="icon"
+					style={{ backgroundImage: `url("/images/email.svg")` }}
+				></div>
+				<p>sauravshrestha28@gmail.com</p>
 			</div>
 		</div>
 	);

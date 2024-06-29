@@ -14,12 +14,7 @@ export default function Navbar() {
 					<li>
 						<Link to="/projects">Projects</Link>
 					</li>
-					<li>
-						<Link to="/skills">Skills</Link>
-					</li>
-					<li>
-						<Link to="/contact">Contact Me</Link>
-					</li>
+
 					<li>
 						<Link to={pdf} target="_blank">
 							My Resume
