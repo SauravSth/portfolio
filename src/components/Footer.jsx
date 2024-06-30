@@ -1,3 +1,3 @@
 export default function Footer() {
-	return <footer>Copyright of &copy; Saurav Shrestha</footer>;
+	return <footer>Property of &copy; Saurav Shrestha</footer>;
 }
