@@ -74,8 +74,8 @@ main {
 }
 
 .card {
-	width: 300px;
-	height: 300px;
+	width: 20em;
+	height: 20em;
 	background-color: var(--color-highlight);
 	display: flex;
 	flex-direction: column;
@@ -121,4 +121,25 @@ main {
 }
 .email {
 	margin-top: 3em;
+}
+
+/* PROJECT PAGE CSS */
+#projectContainer {
+	margin: 3em 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.projectCard {
+	padding: 2em;
+	border: 3px solid var(--color-highlight);
+}
+.projectCard :is(a, p) {
+	margin-left: 3em;
+	font-size: large;
+	color: white;
+}
+.projectName h2,
+.projectURL h2,
+.projectLanguage h2 {
+	color: var(--color-secondary);
 }
