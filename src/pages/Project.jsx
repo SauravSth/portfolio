@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+
+import ProjectCard from '../components/ProjectCard';
 
 export default function Contact() {
 	const [projects, setProjects] = useState([]);
@@ -8,23 +9,12 @@ export default function Contact() {
 			.then((res) => res.json())
 			.then((results) => {
 				const projectCard = results.map((result) => (
-					<div className="projectCard" key={result.id}>
-						<div className="projectName">
-							<h2>Project Title: </h2>
-							<p>{result.name}</p>
-						</div>
-						<div className="projectURL">
-							<h2>Link:</h2>
-							<Link to={result.clone_url} target="_blank">
-								{result.url}
-							</Link>
-						</div>
-						<div className="projectLanguage">
-							<h2>Language:</h2>
-							<p>{result.language}</p>
-						</div>
-						<br />
-					</div>
+					<ProjectCard
+						key={result.id}
+						name={result.name}
+						url={result.clone_url}
+						language={result.language}
+					/>
 				));
 				setProjects(projectCard);
 			});

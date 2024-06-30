@@ -26,11 +26,11 @@ export default function Contact() {
 				<div id="bannerLeft">
 					<h1 className="bannerText">
 						Hello! I'm Saurav.👋
-						<br /> An aspiring web developer.
+						<br /> An aspiring full stack developer.
 					</h1>
 					<p className="subheading">
 						Learning to become a Full-Stack Developer. Proficient in
-						MERN stack and still learning.
+						NodeJS and still learning.
 					</p>
 					<button onClick={() => navigate('/projects')}>
 						Check out my projects
