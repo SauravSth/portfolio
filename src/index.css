@@ -41,8 +41,9 @@ button {
 	font-weight: bold;
 }
 button:hover {
+	background-color: var(--color-tertiary);
+	color: var(--color-secondary);
 	cursor: pointer;
-	transform: scale(1.05);
 	transition: ease-in-out 200ms;
 }
 a:hover {
