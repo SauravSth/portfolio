@@ -7,7 +7,9 @@ export default function MyLinks() {
 			<div className="titleAndLink">
 				<div
 					className="icon"
-					style={{ backgroundImage: `url("/images/linkedin.svg")` }}
+					style={{
+						backgroundImage: `url("/portfolio/images/linkedin.svg")`,
+					}}
 				></div>
 				<Link
 					to={'https://www.linkedin.com/in/sauravshrestha28'}
@@ -19,7 +21,9 @@ export default function MyLinks() {
 			<div className="titleAndLink">
 				<div
 					className="icon"
-					style={{ backgroundImage: `url("/images/github.svg")` }}
+					style={{
+						backgroundImage: `url("/portfolio/images/github.svg")`,
+					}}
 				></div>
 				<Link to={'https://github.com/SauravSth'} target="_blank">
 					Github
@@ -30,7 +34,9 @@ export default function MyLinks() {
 				<div className="titleAndLink">
 					<div
 						className="icon"
-						style={{ backgroundImage: `url("/images/email.svg")` }}
+						style={{
+							backgroundImage: `url("/portfolio/images/email.svg")`,
+						}}
 					></div>
 					<p>sauravshrestha28@gmail.com</p>
 				</div>

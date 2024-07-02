@@ -37,7 +37,10 @@ export default function Contact() {
 					</button>
 				</div>
 				<div id="bannerRight">
-					<img src="/images/mern.jpg" alt="MERN Stack Image" />
+					<img
+						src="portfolio/images/mern.jpg"
+						alt="MERN Stack Image"
+					/>
 				</div>
 			</div>
 			<div id="skillsWrapper">
