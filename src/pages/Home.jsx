@@ -38,7 +38,7 @@ export default function Contact() {
 				</div>
 				<div id="bannerRight">
 					<img
-						src="portfolio/images/mern.jpg"
+						src="/portfolio/images/mern.jpg"
 						alt="MERN Stack Image"
 					/>
 				</div>

@@ -1,6 +1,6 @@
 export default function Card(props) {
 	let setBackgroundImage = {
-		backgroundImage: `url("portfolio/images/${props.img}")`,
+		backgroundImage: `url("/portfolio/images/${props.img}")`,
 	};
 	return (
 		<div className="card">
