@@ -3,31 +3,33 @@ import { Link } from 'react-router-dom';
 export default function MyLinks() {
 	return (
 		<div id="myLinksWrapper">
-			<h1 className="heading">Some of my links: </h1>
-			<div className="titleAndLink">
-				<div
-					className="icon"
-					style={{
-						backgroundImage: `url("/portfolio/images/linkedin.svg")`,
-					}}
-				></div>
-				<Link
-					to={'https://www.linkedin.com/in/sauravshrestha28'}
-					target="_blank"
-				>
-					LinkedIn
-				</Link>
-			</div>
-			<div className="titleAndLink">
-				<div
-					className="icon"
-					style={{
-						backgroundImage: `url("/portfolio/images/github.svg")`,
-					}}
-				></div>
-				<Link to={'https://github.com/SauravSth'} target="_blank">
-					Github
-				</Link>
+			<h1 className="heading">My links: </h1>
+			<div className="links">
+				<div className="titleAndLink">
+					<div
+						className="icon"
+						style={{
+							backgroundImage: `url("/portfolio/images/linkedin.svg")`,
+						}}
+					></div>
+					<Link
+						to={'https://www.linkedin.com/in/sauravshrestha28'}
+						target="_blank"
+					>
+						LinkedIn
+					</Link>
+				</div>
+				<div className="titleAndLink">
+					<div
+						className="icon"
+						style={{
+							backgroundImage: `url("/portfolio/images/github.svg")`,
+						}}
+					></div>
+					<Link to={'https://github.com/SauravSth'} target="_blank">
+						Github
+					</Link>
+				</div>
 			</div>
 			<div className="email">
 				<h1 className="heading">Email me on </h1>

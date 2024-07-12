@@ -5,7 +5,7 @@ import pdf from '../files/Resume.pdf';
 export default function Navbar() {
 	return (
 		<nav>
-			<div className="navLeft">Saurav Shrestha</div>
+			<div className="navLeft"></div>
 			<div className="navRight">
 				<ul>
 					<li>
@@ -17,7 +17,7 @@ export default function Navbar() {
 
 					<li>
 						<Link to={pdf} target="_blank">
-							My Resume
+							Resume
 						</Link>
 					</li>
 				</ul>

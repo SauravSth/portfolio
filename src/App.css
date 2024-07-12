@@ -70,7 +70,7 @@ main {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: auto;
-	row-gap: 3em;
+	gap: 3em;
 }
 
 .card {
@@ -142,4 +142,56 @@ main {
 .projectURL h2,
 .projectLanguage h2 {
 	color: var(--color-secondary);
+}
+
+/* RESPONSIVE CSS */
+@media screen and (max-width: 1650px) {
+	#cardWrapper {
+		grid-template-columns: 1fr 1fr;
+	}
+	nav li {
+		margin-right: 20px;
+	}
+	nav li:last-child {
+		margin-right: 0;
+	}
+	#projectContainer {
+		grid-template-columns: 1fr;
+	}
+}
+@media screen and (max-width: 1200px) {
+	#cardWrapper {
+		grid-column: span 4;
+	}
+	nav {
+		padding: 2em 5em;
+	}
+	.links {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+	#bannerRight {
+		display: none;
+	}
+	.aside {
+		grid-column: 1/4;
+	}
+}
+@media screen and (max-width: 750px) {
+	nav {
+		padding: 2em;
+	}
+	.navLeft {
+		display: none;
+	}
+	.navRight {
+		width: 80%;
+	}
+	#cardWrapper {
+		grid-template-columns: 1fr;
+	}
+	.card {
+		width: 100%;
+	}
 }

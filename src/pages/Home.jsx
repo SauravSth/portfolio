@@ -26,7 +26,8 @@ export default function Contact() {
 				<div id="bannerLeft">
 					<h1 className="bannerText">
 						Hello! I'm Saurav.👋
-						<br /> An aspiring full stack developer.
+						<br /> A full stack developer in specializing in MERN
+						Stack.
 					</h1>
 					<p className="subheading">
 						Learning to become a Full-Stack Developer. Proficient in
