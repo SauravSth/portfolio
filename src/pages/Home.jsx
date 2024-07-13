@@ -33,7 +33,7 @@ export default function Contact() {
 						Learning to become a Full-Stack Developer. Proficient in
 						NodeJS and still learning.
 					</p>
-					<button onClick={() => navigate('/projects')}>
+					<button onClick={() => navigate('/portfolio/projects')}>
 						Check out my projects
 					</button>
 				</div>

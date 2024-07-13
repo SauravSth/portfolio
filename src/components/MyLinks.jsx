@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 export default function MyLinks() {
 	return (
 		<div id="myLinksWrapper">
-			<h1 className="heading">My links: </h1>
+			<h1 className="heading">My links </h1>
 			<div className="links">
 				<div className="titleAndLink">
 					<div
@@ -32,7 +32,7 @@ export default function MyLinks() {
 				</div>
 			</div>
 			<div className="email">
-				<h1 className="heading">Email me on </h1>
+				<h1 className="heading">Email </h1>
 				<div className="titleAndLink">
 					<div
 						className="icon"

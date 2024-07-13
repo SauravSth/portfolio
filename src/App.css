@@ -18,7 +18,7 @@ nav {
 	font-weight: bolder;
 }
 .navRight {
-	width: 30%;
+	width: 50%;
 }
 nav ul {
 	display: flex;
@@ -166,10 +166,16 @@ main {
 	nav {
 		padding: 2em 5em;
 	}
+	.navLeft {
+		display: none;
+	}
 	.links {
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
+	}
+	.navRight {
+		width: 80%;
 	}
 	#bannerRight {
 		display: none;
@@ -182,16 +188,13 @@ main {
 	nav {
 		padding: 2em;
 	}
-	.navLeft {
-		display: none;
-	}
-	.navRight {
-		width: 80%;
-	}
 	#cardWrapper {
 		grid-template-columns: 1fr;
 	}
 	.card {
 		width: 100%;
+	}
+	.projectCard a {
+		word-break: break-word;
 	}
 }

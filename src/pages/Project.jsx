@@ -21,7 +21,7 @@ export default function Contact() {
 	}, []);
 	return (
 		<>
-			<h1 className="heading">Some of my projects!</h1>
+			<h1 className="heading">My Projects!</h1>
 			<div id="projectContainer">{projects}</div>
 		</>
 	);

@@ -25,9 +25,10 @@
 .heading {
 	color: var(--color-secondary);
 	text-decoration: underline;
-	text-underline-offset: 0.8em;
+	text-underline-offset: 0.3em;
 	grid-column: span 4;
 	font-size: 3rem;
+	word-break: normal;
 }
 .subheading {
 	color: darkgray;
