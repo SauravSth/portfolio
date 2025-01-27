@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import pdf from '../files/Resume.pdf';
+import pdf from '../files/resume.pdf';
 
 export default function Navbar() {
 	return (
