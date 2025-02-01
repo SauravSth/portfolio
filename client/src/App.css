@@ -1,200 +1,50 @@
-/* NAV CSS */
-nav {
-	display: flex;
-	padding: 2em 10em;
-	justify-content: space-around;
-	align-items: center;
-	background-color: var(--color-tertiary);
-	color: white;
-	font-weight: bold;
-}
-.navLeft,
-.navRight {
-	font-size: 1rem;
-}
-.navLeft {
-	width: 100%;
-	font-family: var(--logo-font);
-	font-weight: bolder;
-}
-.navRight {
-	width: 50%;
-}
-nav ul {
-	display: flex;
-	list-style: none;
-	justify-content: space-between;
-	align-items: center;
-}
-nav a,
-.titleAndLink a {
-	color: white;
-}
-nav li:last-child {
-	border: 2px solid var(--color-secondary);
-	padding: 1em;
-}
-/* FOOTER CSS */
-footer {
-	background-color: var(--color-tertiary);
-	padding: 2em 0;
-	color: gray;
-	text-align: center;
-}
-
-/* MAIN CSS */
-main {
-	min-height: 80vh;
-	background-color: var(--color-primary);
-	color: white;
-}
-#wrapper {
-	width: 80%;
-	margin: auto;
-	padding: 2em 0;
-}
-#bannerWrapper {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.bannerText {
-	font-size: 4rem;
-}
-#bannerRight img {
-	width: 100%;
-}
-#skillsWrapper {
-	margin: 2em 0;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: auto;
-	gap: 3em;
-}
-
-.card {
-	width: 20em;
-	height: 20em;
-	background-color: var(--color-highlight);
+/* BANNER CSS */
+.banner {
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
-	padding: 2em;
-}
-.aside {
-	grid-column: 4;
-	grid-row: auto;
-}
-#cardWrapper {
-	gap: 2em;
-	grid-column: span 3;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: auto;
-}
-.icon {
+	justify-content: center;
+	align-items: center;
+	background-image: url('/images/graybackground.jpg');
 	background-repeat: no-repeat;
-	background-size: contain;
-	width: 3em;
-	height: 3em;
-	filter: invert(40%) sepia(74%) saturate(3838%) hue-rotate(334deg)
-		brightness(102%) contrast(101%);
+	background-size: cover;
 }
-.cardTitle {
-	font-weight: bold;
-	font-size: large;
+.subHeading {
+	width: 40%;
+	text-align: center;
+	line-break: normal;
 }
-#myLinksWrapper {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	height: 100%;
+.heading {
+	font-size: 5rem;
+	margin-bottom: 0.6em;
+	text-transform: uppercase;
 }
-.titleAndLink {
-	display: flex;
-	align-items: center;
-	margin-top: 3em;
+.subHeading {
+	margin-bottom: 2em;
+	font-size: 1.3rem;
+	font-weight: normal;
 }
-.titleAndLink .icon {
-	margin-right: 1em;
-}
-.email {
-	margin-top: 3em;
+.scrollGif {
+	width: 10%;
+	position: absolute;
+	bottom: 0;
 }
 
-/* PROJECT PAGE CSS */
-#projectContainer {
-	margin: 3em 0;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+/* SIDE SOCIALS CSS */
+#sideSocials {
+	position: fixed;
+	width: 4em;
+	height: 15em;
+	top: 35%;
+	left: 0;
+	border-radius: 5px;
+	background-color: var(--color-primary);
+	box-shadow: 0px 0px 15px gray;
 }
-.projectCard {
-	padding: 2em;
-	border: 3px solid var(--color-highlight);
+#sideSocials li {
+	margin-top: 1.8em;
 }
-.projectCard :is(a, p) {
-	margin-left: 3em;
-	font-size: large;
-	color: white;
-}
-.projectName h2,
-.projectURL h2,
-.projectLanguage h2 {
-	color: var(--color-secondary);
-}
-
-/* RESPONSIVE CSS */
-@media screen and (max-width: 1650px) {
-	#cardWrapper {
-		grid-template-columns: 1fr 1fr;
-	}
-	nav li {
-		margin-right: 20px;
-	}
-	nav li:last-child {
-		margin-right: 0;
-	}
-	#projectContainer {
-		grid-template-columns: 1fr;
-	}
-}
-@media screen and (max-width: 1200px) {
-	#cardWrapper {
-		grid-column: span 4;
-	}
-	nav {
-		padding: 2em 5em;
-	}
-	.navLeft {
-		display: none;
-	}
-	.links {
-		display: flex;
-		justify-content: space-between;
-		width: 100%;
-	}
-	.navRight {
-		width: 80%;
-	}
-	#bannerRight {
-		display: none;
-	}
-	.aside {
-		grid-column: 1/4;
-	}
-}
-@media screen and (max-width: 750px) {
-	nav {
-		padding: 2em;
-	}
-	#cardWrapper {
-		grid-template-columns: 1fr;
-	}
-	.card {
-		width: 100%;
-	}
-	.projectCard a {
-		word-break: break-word;
-	}
+#sideSocials img {
+	margin-left: 0.7em;
+	width: 60%;
 }

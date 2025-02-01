@@ -1,55 +1,23 @@
 import { useNavigate } from 'react-router-dom';
 
-import Card from '../components/Card';
-
-import skills from '../files/skills.json';
-import MyLinks from '../components/MyLinks';
-
 export default function Contact() {
-	const navigate = useNavigate();
-	let skillData = skills;
-	let skillArray = [];
-	for (const skill in skillData) {
-		skillArray.push(
-			<Card
-				key={skill}
-				title={skill}
-				description={skillData[skill].description}
-				img={skillData[skill].img}
-			/>
-		);
-	}
-
 	return (
 		<>
-			<div id="bannerWrapper">
-				<div id="bannerLeft">
-					<h1 className="bannerText">
-						Hello! I'm Saurav.👋
-						<br /> A full stack developer in specializing in MERN
-						Stack.
-					</h1>
-					<p className="subheading">
-						Learning to become a Full-Stack Developer. Proficient in
-						NodeJS and still learning.
-					</p>
-					<button onClick={() => navigate('/portfolio/projects')}>
-						Check out my projects
-					</button>
-				</div>
-				<div id="bannerRight">
-					<img
-						src="/portfolio/images/mern.jpg"
-						alt="MERN Stack Image"
-					/>
-				</div>
-			</div>
-			<div id="skillsWrapper">
-				<h1 className="heading">My Skill Set</h1>
-				<div id="cardWrapper">{skillArray}</div>
-				<div className="aside">
-					<MyLinks />
-				</div>
+			<div className="banner">
+				<h1 className="heading">Hi! I'm Saurav Shrestha</h1>
+				<h2 className="subHeading">
+					A passionate result-oriented Full-Stack Developer skilled in
+					crafting scalable and user-centric web solutions that lead
+					to success of projects
+				</h2>
+				<a href="" className="primaryButton">
+					Projects
+				</a>
+				<img
+					src="/images/scroll.gif"
+					alt="scroll icon"
+					className="scrollGif"
+				/>
 			</div>
 		</>
 	);

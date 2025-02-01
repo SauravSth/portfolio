@@ -6,10 +6,10 @@
 	--primary-font: 'Madimi One';
 	--logo-font: 'Playwrite ID';
 	--secondary-font: 'Didact Gothic';
-	--color-secondary: #fd4956;
-	--color-primary: #23263a;
-	--color-tertiary: #212336;
-	--color-highlight: #2b2d41;
+	--color-primary: #fff;
+	--color-secondary: #aaa;
+	--color-tertiary: #000;
+	--color-highlight: gray;
 }
 
 * {
@@ -18,36 +18,63 @@
 	box-sizing: border-box;
 	font-family: var(--secondary-font);
 	text-decoration: none;
+	list-style-type: none;
+	color: var(--color-tertiary);
 }
+
 *::-webkit-scrollbar {
 	display: none;
 }
-.heading {
-	color: var(--color-secondary);
-	text-decoration: underline;
-	text-underline-offset: 0.3em;
-	grid-column: span 4;
-	font-size: 3rem;
-	word-break: normal;
+
+.primaryButton {
+	padding: 1.6em 5em;
+	border-radius: 5px;
+	background-color: blueviolet;
+	color: var(--color-primary);
+	text-transform: uppercase;
+	font-weight: 900;
+
+	&:hover {
+		cursor: pointer;
+		background-color: var(--color-tertiary);
+		transform: translateY(-5px);
+		transition: ease-in-out 300ms;
+	}
 }
-.subheading {
-	color: darkgray;
+
+/* NAV STYLE */
+nav {
+	position: fixed;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	padding: 0.8em 4em;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 1.2rem;
+	background-color: var(--color-primary);
 }
-button {
-	padding: 1.5em;
-	background-color: var(--color-secondary);
-	margin: 1em 0;
-	border: none;
-	color: white;
-	font-weight: bold;
+.navLeft,
+.navRight {
+	width: 50%;
+	display: flex;
+	align-items: center;
 }
-button:hover {
-	background-color: var(--color-tertiary);
-	color: var(--color-secondary);
-	cursor: pointer;
-	transition: ease-in-out 200ms;
+.navRight ul {
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
 }
-a:hover {
-	color: var(--color-secondary);
-	transition: 0.5s ease;
+.navRight ul li {
+	margin-left: 3em;
+}
+#myImage {
+	flex: 1;
+}
+#myName {
+	flex: 9;
+}
+#myImage img {
+	width: 80%;
+	border-radius: 50%;
 }

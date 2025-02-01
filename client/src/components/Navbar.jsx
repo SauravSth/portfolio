@@ -5,14 +5,19 @@ import pdf from '../files/resume.pdf';
 export default function Navbar() {
 	return (
 		<nav>
-			<div className="navLeft"></div>
+			<div className="navLeft">
+				<div id="myImage">
+					<img
+						src="../../public/images/MyPhoto.png"
+						alt="Saurav Shrestha Image"
+					/>
+				</div>
+				<div id="myName">Saurav Shrestha</div>
+			</div>
 			<div className="navRight">
 				<ul>
 					<li>
-						<Link to="/portfolio">Home</Link>
-					</li>
-					<li>
-						<Link to="/portfolio/projects">Projects</Link>
+						<Link to="/">Home</Link>
 					</li>
 
 					<li>
