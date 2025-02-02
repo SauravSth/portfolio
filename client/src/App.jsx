@@ -9,6 +9,7 @@ import './App.css';
 
 // PAGES
 import Home from './pages/Home';
+import PageNotFound from './pages/PageNotFound';
 
 function App() {
 	return (
@@ -19,6 +20,7 @@ function App() {
 				<div id="wrapper">
 					<Routes>
 						<Route path="/" element={<Home />} />
+						<Route path="*" element={<PageNotFound />} />
 					</Routes>
 				</div>
 			</main>

@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 import pdf from '../files/resume.pdf';
 
 export default function Navbar() {
@@ -8,7 +6,7 @@ export default function Navbar() {
 			<div className="navLeft">
 				<div id="myImage">
 					<img
-						src="../../public/images/MyPhoto.png"
+						src="/images/myPhoto.png"
 						alt="Saurav Shrestha Image"
 					/>
 				</div>
@@ -17,22 +15,22 @@ export default function Navbar() {
 			<div className="navRight">
 				<ul>
 					<li>
-						<Link to="/">Home</Link>
+						<a href="#banner">Home</a>
 					</li>
 					<li>
-						<Link to="/">About Me</Link>
+						<a href="#aboutMe">About Me</a>
 					</li>
 					<li>
-						<Link to="/">Projects</Link>
+						<a href="#project">Projects</a>
 					</li>
 
 					<li>
-						<Link to="/">Contact Me</Link>
+						<a href="#contactUs">Contact Me</a>
 					</li>
 					<li>
-						<Link to={pdf} target="_blank">
+						<a href={pdf} target="_blank">
 							Resume
-						</Link>
+						</a>
 					</li>
 				</ul>
 			</div>

@@ -1,16 +1,16 @@
-import { useNavigate } from 'react-router-dom';
+import links from '../files/links.json';
 
-export default function Contact() {
+export default function Home() {
 	return (
 		<>
-			<div className="banner">
+			<div id="banner" className="banner">
 				<h1 className="heading">Hi! I'm Saurav Shrestha</h1>
 				<h2 className="subHeading">
 					A passionate result-oriented Web Developer skilled in
 					crafting scalable and user-centric web solutions that lead
 					to success of projects
 				</h2>
-				<a href="" className="primaryButton">
+				<a href="#project" className="primaryButton">
 					Projects
 				</a>
 				<img
@@ -33,14 +33,42 @@ export default function Contact() {
 						<div className="aboutMeContent contentContainer">
 							<h3>Here's some stuff about me</h3>
 							<p className="aboutMeText">
-								Proident sit culpa et aute excepteur dolor sit.
-								Mollit anim irure aliquip in deserunt minim
-								consequat ullamco consequat in fugiat anim quis
-								eiusmod. Ipsum ex minim incididunt sunt enim
-								ullamco. Laboris quis do incididunt excepteur
-								esse quis dolore ex enim incididunt nulla
-								veniam. Id elit incididunt sunt sunt do minim
-								velit quis.
+								I'm a <strong>backend</strong> focused web
+								developer building the Backend of websites to
+								create a successful product. I graduated from{' '}
+								<strong>Conestoga College</strong> taking{' '}
+								<strong>Web Development</strong> in 2024 where I
+								created projects which you can find in the{' '}
+								<a href="#project" className="link">
+									Projects
+								</a>{' '}
+								section.
+							</p>
+							<p className="aboutMeText">
+								I have programming since grade 8 where I started
+								with <strong>HTML</strong> and have only learnt
+								more since. I have the most experience in{' '}
+								<strong>JavaScript</strong> but eagerly develop
+								new skills daily. Feel free to connect with me
+								on my{' '}
+								<a
+									href={links.linkedIn}
+									className="link"
+									target="_blank"
+								>
+									LinkedIn
+								</a>
+								.
+							</p>
+							<p className="aboutMeText">
+								I'm open to <strong>job</strong> opportunities
+								where I can contribute, learn and grow. If I
+								seem like I have fitting experience and am a
+								good fit then don't hesitate to{' '}
+								<a href="#contactUs" className="link">
+									contact me
+								</a>
+								.
 							</p>
 						</div>
 						<div className="skillContent contentContainer">
@@ -77,12 +105,27 @@ export default function Contact() {
 					</div>
 					<div id="aboutContentContainer">
 						<div className="contentContainer">
-							<img src="/images/mern.jpg" alt="project 1 image" />
+							<img
+								src="/images/randomscreen.png"
+								alt="PerCent App Screen Image"
+							/>
 						</div>
 						<div className="contentContainer">
-							<h3>PerCent App</h3>
-							<p>Capstone Project Description</p>
-							<a href="" className="primaryButton small">
+							<h3>PerCent</h3>
+							<div className="underline left"></div>
+							<p className="aboutMeText">
+								PerCent is a finance tracker app which me and my
+								group made for our Capstone project. It has
+								functionality for both individual and group use.
+								It includes functionality for tracking
+								individual finances, setting up groups, and
+								managing shared expenses.
+							</p>
+							<a
+								href="https://github.com/SauravSth/CapstoneProjectConestoga"
+								className="primaryButton small"
+								target="_blank"
+							>
 								Checkout Github
 							</a>
 						</div>
@@ -90,12 +133,27 @@ export default function Contact() {
 					<div className="underline long"></div>
 					<div id="aboutContentContainer">
 						<div className="contentContainer">
-							<img src="/images/mern.jpg" alt="project 2 image" />
+							<img
+								src="/images/randomscreen.png"
+								alt="License Appointment App Image"
+							/>
 						</div>
 						<div className="contentContainer">
-							<h3>License Appointment Booking App</h3>
-							<p>Description</p>
-							<a href="" className="primaryButton small">
+							<h3>License Appointment App</h3>
+							<div className="underline left"></div>
+							<p className="aboutMeText">
+								This app allows users to register for different
+								levels of the license exam. The user can
+								register for the G1 initially and G2 after.
+								Different user types have been setup to handle
+								test decisions and appointment management has
+								been setup for admin.
+							</p>
+							<a
+								href="https://github.com/SauravSth/LicenseApp"
+								className="primaryButton small"
+								target="_blank"
+							>
 								Checkout Github
 							</a>
 						</div>
@@ -132,8 +190,8 @@ export default function Contact() {
 							<textarea
 								name="message"
 								id="message"
-								cols={100}
-								rows={10}
+								cols={10}
+								rows={8}
 								placeholder="Your Message Here..."
 							></textarea>
 							<button
